@@ -5,6 +5,7 @@ class Song < ActiveRecord::Base
   def get_genre_name
     self.genres.name
   end
+  end
 
   def drake_made_this
     self.artist = Artist.find_or_create_by(name: "Drake")
